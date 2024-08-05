@@ -29,6 +29,7 @@ const Login = () => {
         let isValid = true;
 
         if (isSignUp) {
+            // Validate additional fields for sign-up
             if (!formData.firstName) {
                 newErrors.firstName = 'First name is required.';
                 isValid = false;
@@ -41,7 +42,7 @@ const Login = () => {
                 newErrors.age = 'Please enter a valid age.';
                 isValid = false;
             }
-            if (!formData.phone || !/^\d{10}$/.test(formData.phone)) {
+            if (!formData.phone || !/^(\+91|91)?\d{10}$/.test(formData.phone)) {
                 newErrors.phone = 'Please enter a valid phone number.';
                 isValid = false;
             }
@@ -51,6 +52,7 @@ const Login = () => {
             }
         }
 
+        // Email and password validation for both login and sign-up
         if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
             newErrors.email = 'Please enter a valid email address.';
             isValid = false;
@@ -171,7 +173,7 @@ const Login = () => {
                                                 />
                                             </div>
                                         </div>
-                                        <button type='submit' className='btn'>Sign Up</button>
+                                        <button type='submit' className='btn '>Sign Up</button>
                                     </form>
                                     <p className='mt-3'>
                                         Already have an account?{' '}
@@ -202,11 +204,11 @@ const Login = () => {
                                             onChange={handleChange}
                                             error={errors.password}
                                         />
-                                        <button type='submit' className='btn'>Login</button>
+                                        <button type='submit' className='btn '>Login</button>
                                     </form>
                                     <p className='mt-3'>
                                         Don't have an account?{' '}
-                                        <button className='btn ' onClick={() => setIsSignUp(true)}>Sign Up</button>
+                                        <button  className='btn ' onClick={() => setIsSignUp(true)}>Sign Up</button>
                                     </p>
                                 </div>
                             </div>
