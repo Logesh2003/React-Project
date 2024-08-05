@@ -1,0 +1,22 @@
+/* Hide image on medium screens */
+@media (max-width: 767px) {
+  .responsive-img {
+    display: none;
+  }
+}
+
+.card {
+  border-radius: 15px;
+  /* background-color: #93E3A8; */
+
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn{
+  background-color: rgb(146, 227, 169);
+}
+.responsive-img{
+  background-color: #93E3A8;
+}
