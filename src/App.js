@@ -1,9 +1,11 @@
 import './App.css';
-import Login from "./components/login"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Login from "./components/login"
+import Page1 from "./components/Dashboard"
 function App() {
   return (
     <div className="App">
-      <Login />
+      <Page1 />
     </div>
   );
 }

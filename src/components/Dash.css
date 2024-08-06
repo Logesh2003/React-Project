@@ -1,0 +1,55 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.dashboard-container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 90vh;
+}
+
+.profile-section {
+    margin: 40px 0;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile-email {
+    color: #888;
+    font-size: 12px;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #007bff;
+}
+
+.sidebar {
+    border-right: 1px solid #d4d3d3;
+    padding: 20px 0;
+    height: 100%;
+    margin-top: 30px;
+}
+
+
+
+
